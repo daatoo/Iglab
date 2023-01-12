@@ -3,9 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
-      fontFamily: {
-        'Liberty': ["Liberty-MT Bold"],
-      },
+      // fontFamily: {
+      //   'Liberty': ["Liberty-MT Bold"],
+      // },
     },
   },
   plugins: [],
