@@ -57,15 +57,24 @@
                 <div class="w-[111px] h-[5px] bg-[#ff6D00] rounded-[5px]"></div>
             </div>
             <div class="flex gap-[24px]">
-                <div
-                    class="flex flex-col gap-[45px] w-[379px] bg-white border border-[#0000001a] px-[43px] py-[32px] rounded-[20px]">
+                <div id="project"
+                    class="flex flex-col gap-[45px] w-[379px] bg-white border border-[#0000001a] px-[43px] py-[32px] rounded-[20px] cursor-pointer ">
                     <div class="flex justify-between items-center">
-                        <img src="../src/assets/project-icon.png" class="w-[53px] h-[47px]" alt="" />
+                        <div class="w-[58px] h-[58px] border-[4px] border-[#ffffff33] rounded-[50%] flex justify-center items-center">
+                            <img src="../src/assets/project-icon.png" class="w-[53px] h-[47px]" alt="" />
+                            <img src="../src/assets/project-icon-white.png" class="w-[53px] h-[47px] hidden" alt="" />
+                        </div>
                         <h3 class="font-normal text-[32px] leading-[39px] text-[#000000]">
                             პროექტები
                         </h3>
                     </div>
-                    <div class="w-[53px] h-[5px] bg-[#FF6D00] rounded-[5px]"></div>
+                    <div class="flex w-full justify-between items-center">
+                        <div class="w-[53px] h-[5px] bg-[#FF6D00] rounded-[5px]"></div>
+                        <div class="flex justify-center items-center">
+                            <div class="w-[53px] h-[5px] bg-white rounded-[5px] translate-x-2"></div>
+                            <img src="../src/assets/nextstepWhite.png" alt="">
+                        </div>
+                    </div>
                     <div class="flex justify-between items-center">
                         <p class="font-normal text-base leading-[19px] text-[#000000]">
                             ნამუშევრების პორთფოლიო
@@ -74,7 +83,7 @@
                     </div>
                 </div>
                 <div
-                    class="flex flex-col gap-[37px] w-[379px] bg-white border border-[#0000001a] px-[43px] pb-[25px] pt-[22px] rounded-[20px]">
+                    class="flex flex-col gap-[37px] w-[379px] bg-white border border-[#0000001a] px-[43px] pb-[25px] pt-[22px] rounded-[20px] cursor-pointer trainings">
                     <div class="flex justify-between items-center">
                         <div>
                             <img src="../src/assets/marketing1-logo.png" alt="" />
@@ -84,8 +93,14 @@
                             მარკეტინგი
                         </h3>
                     </div>
-                    <div class="w-[53px] h-[5px] bg-[#FF6D00] rounded-[5px]"></div>
-                    <div class="flex justify-between items-center">
+                    <div class="flex w-full justify-between items-center">
+                        <div class="w-[53px] h-[5px] bg-[#FF6D00] rounded-[5px]"></div>
+                        <div class="flex justify-center items-center">
+                            <div class="w-[53px] h-[5px] bg-white rounded-[5px] translate-x-2"></div>
+                            <img src="../src/assets/nextstepWhite.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center mt-[5px]">
                         <p class="font-normal text-base leading-[19px] text-[#000000]">
                             ბრენდინგი, პროდაქშენი
                         </p>
@@ -93,15 +108,21 @@
                     </div>
                 </div>
                 <div
-                    class="flex flex-col gap-[39px] w-[379px] bg-white border border-[#0000001a] px-[43px] pt-[31px] pb-[25px] rounded-[20px]">
+                    class="flex flex-col gap-[39px] w-[379px] bg-white border border-[#0000001a] px-[43px] pt-[31px] pb-[25px] rounded-[20px] cursor-pointer trainings">
                     <div class="flex justify-between items-center">
                         <img src="../src/assets/trainings-logo.png" class="w-[53px] h-[47px]" alt="" />
                         <h3 class="font-normal text-[32px] leading-[39px] text-[#000000]">
                             ტრენინგები
                         </h3>
                     </div>
-                    <div class="w-[53px] h-[5px] bg-[#FF6D00] rounded-[5px]"></div>
-                    <div class="flex justify-between items-center mt-[5px]">
+                    <div class="flex w-full justify-between items-center mt-[9px]">
+                        <div class="w-[53px] h-[5px] bg-[#FF6D00] rounded-[5px]"></div>
+                        <div class="flex justify-center items-center">
+                            <div class="w-[53px] h-[5px] bg-white rounded-[5px] translate-x-2"></div>
+                            <img src="../src/assets/nextstepWhite.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center mt-[3px]">
                         <p class="font-normal text-base leading-[19px] text-[#000000]">
                             ტრენინგები,  workshop-ები
                         </p>
@@ -124,15 +145,15 @@
                 <div class="w-[111px] h-[5px] bg-[#ff6D00] rounded-[5px]"></div>
             </div>
             <div class="flex gap-2.5">
-                <div class="relative blurImage">
+                <div class="relative blurImage transition duration-1000">
                     <img src="../src/assets/news-img.png" class="rounded-[20px]" alt="">
-                    <div class="bottom-0 absolute w-full h-full backdrop-filter backdrop-blur-[5px] hidden"></div>
+                    <div class="bottom-0 absolute rounded-[20px] w-full h-full transition duration-200"></div>
 
                     <div
-                        class="bg-[#00000033] absolute w-full flex flex-col px-[43px] py-[21px] bottom-0 backdrop-filter backdrop-blur-[5px] rounded-b-[20px]">
-                        <h3 class="font-normal text-[36px] leading-[44px] text-white ">
+                        class="bg-[#00000033] absolute w-full flex flex-col px-[43px] py-[21px] bottom-0 backdrop-filter backdrop-blur-[5px] rounded-b-[20px] scroll-smooth">
+                        <h3 class="font-normal text-[36px] leading-[44px] text-white">
                             2022 წლის ტრენდები</h3>
-                        <h4 class="font-medium text-2xl leading-7 text-white ">პატარა მიმოხილვა</h4>
+                        <h4 class="font-medium text-2xl leading-7 text-white">პატარა მიმოხილვა</h4>
                         <div
                             class="cursor-pointer justify-center items-center bg-[#Ff6D00] rounded-[50px] px-3 py-[8px] max-w-[150px] hidden">
                             <p class="font-normal text-base leading-[19px] text-white ">კონტაქტი</p>
@@ -140,9 +161,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative blurImage">
+                <div class="relative blurImage transition-all">
                     <img src="../src/assets/news-img.png" class="rounded-[20px]" alt="">
-                    <div class="bottom-0 absolute w-full h-full backdrop-filter backdrop-blur-[5px] hidden"></div>
+                    <div class="bottom-0 absolute rounded-[20px] w-full h-full transition duration-200"></div>
 
                     <div
                         class="bg-[#00000033] absolute w-full flex flex-col px-[43px] py-[21px] bottom-0 backdrop-filter backdrop-blur-[5px] rounded-b-[20px]">
