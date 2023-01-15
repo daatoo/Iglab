@@ -1099,8 +1099,20 @@ video {
   transition-duration: 200ms;
 }
 
-/* @import url(//db.onlinewebfonts.com/c/ce3f2f1b653e3f5739b689b2b6bf6753?family=Liberty-MT+Bold); */
-
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0 !important;
+}
+
+@font-face {
+  font-family: "Liberty-MT Bold";
+
+  src: url("//db.onlinewebfonts.com/t/ce3f2f1b653e3f5739b689b2b6bf6753.eot");
+
+  src: url("//db.onlinewebfonts.com/t/ce3f2f1b653e3f5739b689b2b6bf6753.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ce3f2f1b653e3f5739b689b2b6bf6753.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ce3f2f1b653e3f5739b689b2b6bf6753.woff") format("woff"), url("//db.onlinewebfonts.com/t/ce3f2f1b653e3f5739b689b2b6bf6753.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ce3f2f1b653e3f5739b689b2b6bf6753.svg#Liberty-MT Bold") format("svg");
 }
