@@ -1,9 +1,7 @@
 let container = document.getElementById("container");
 let child = container.children;
-let NumOfNews = child.length;
-let NumOfScroll = Math.ceil(NumOfNews / 3);
-let html = document.getElementById("html");
-let fullhtml = [];
+let NumOfelements = child.length;
+let NumOfScroll = Math.ceil(NumOfelements / 3);
 let circle = document.getElementsByClassName("circle");
 let scrolll = 0
 // function for slider right click
@@ -130,4 +128,4 @@ document.querySelectorAll('.trainings').forEach(item => {
         item.children[2].children[0].classList.add("text-[#000000]")
         item.children[2].children[0].classList.remove("text-white")
     })
-  })
+})

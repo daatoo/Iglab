@@ -6,41 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../dist/output.css" />
-    <!-- <link href="//db.onlinewebfonts.com/c/ce3f2f1b653e3f5739b689b2b6bf6753?family=Liberty-MT+Bold" rel="stylesheet"
-        type="text/css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link href="//db.onlinewebfonts.com/c/ce3f2f1b653e3f5739b689b2b6bf6753?family=Liberty-MT+Bold" rel="stylesheet"
+        type="text/css" />
     <title>Iglab</title>
 </head>
 
-<body>
+<body class="font-Liberty">
     <!--
         header
     -->
     <header class="flex w-full h-[100px] px-[128px] justify-between items-center">
-        <img src="../src/assets/logo.png" class="w-[114px] h-[39px]" alt="" />
+        <img src="../src/assets/logo.png" class="w-[114px] h-[39px] cursor-pointer" alt="" />
         <!--
         navigation
       -->
         <nav class="flex gap-[34px] mr-[63px]">
-            <li class=" list-none font-normal text-2xl leading-[29px] text-[#000000]">
+            <li class=" list-none font-normal text-2xl leading-[29px] text-[#000000] cursor-pointer">
                 ჩვენს შესახებ
             </li>
-            <li class="list-none font-normal text-2xl leading-[29px] text-[#000000]">
+            <li class="list-none font-normal text-2xl leading-[29px] text-[#000000] ml-[11px] cursor-pointer">
                 სერვისები
             </li>
-            <li class="list-none font-normal text-2xl leading-[29px] text-[#000000]">
+            <li class="list-none font-normal text-2xl leading-[29px] text-[#000000] ml-[6px] cursor-pointer">
                 ნამუშევრები
             </li>
-            <li class="list-none font-normal text-2xl leading-[29px] text-[#000000]">
+            <li class="list-none font-normal text-2xl leading-[29px] text-[#000000] cursor-pointer">
                 კონტაქტი
             </li>
         </nav>
-        <div class="flex justify-center items-center">
-            <div
-                class="flex justify-center items-center w-[51px] h-[51px] border-[8px] border-white rounded-[50%] bg-[#FF6D00]">
+        <div class="flex gap-[31px] justify-center items-center">
+            <div class="flex justify-center items-center w-[51px] h-[51px] rounded-[50%] bg-[#FF6D00] cursor-pointer">
                 <img src="../src/assets/Telephone.png" class="w-6 h-6" alt="" />
             </div>
-            <div
-                class="flex justify-center items-center w-[51px] h-[51px] border-[8px] border-white rounded-[50%] bg-[#FF6D00]">
+            <div class="flex justify-center items-center w-[51px] h-[51px]  rounded-[50%] bg-[#FF6D00] cursor-pointer">
                 <p class="font-normal text-2xl leading-[29px] text-white">
                     GE
                 </p>
@@ -48,7 +51,67 @@
         </div>
     </header>
 
-    <section class="w-full flex justify-center">
+    <!--
+        first slider
+    -->
+    <section class="w-full flex justify-center items-center mt-[50px]">
+        <div id="carouselExampleInterval" class="carousel slide  w-[1205px]" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="6000">
+                    <div class="flex relative d-block">
+                        <img src="../src/assets/christian-holzinger-CUY_YHhCFl4-unsplash 1.png"
+                            class="min-w-[1200px] max-w-[1205px] rounded-[20px]" alt="">
+                        <div class="absolute flex flex-col bottom-[75px] left-[75px] gap-[22px]">
+                            <h1 class="font-normal text-[48px] leading-[58px] text-white">დიზაინი,
+                                <br>რომელიც მეტყველებს.
+                            </h1>
+                            <h2 class="font-medium text-[36px] leading-[42px] text-white">კომპანიის შესახებ
+                            </h2>
+                            <div class="bg-white rounded-[50px] flex py-[18px] px-[33px] max-w-[244px] gap-6">
+                                <img src="../src/assets/nextstep.png" alt="">
+                                <h3 class="font-normal text-[24px] leading-[29px] text-[#FF6D00]">გაიგე მეტი</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="flex relative d-block">
+                        <img src="../src/assets/christian-holzinger-CUY_YHhCFl4-unsplash 1.png"
+                            class="min-w-[1200px] max-w-[1205px] rounded-[20px]" alt="">
+                        <div class="absolute flex flex-col bottom-[75px] left-[75px] gap-[22px]">
+                            <h1 class="font-normal text-[48px] leading-[58px] text-white">დიზაინი,
+                                <br>რომელიც მეტყველებს.
+                            </h1>
+                            <h2 class="font-medium text-[36px] leading-[42px] text-white">კომპანიის შესახებ
+                            </h2>
+                            <div class="bg-white rounded-[50px] flex py-[18px] px-[33px] max-w-[244px] gap-6">
+                                <img src="../src/assets/nextstep.png" alt="">
+                                <h3 class="font-normal text-[24px] leading-[29px] text-[#FF6D00]">გაიგე მეტი</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="flex relative d-block">
+                        <img src="../src/assets/christian-holzinger-CUY_YHhCFl4-unsplash 1.png"
+                            class="min-w-[1200px] max-w-[1205px] rounded-[20px]" alt="">
+                        <div class="absolute flex flex-col bottom-[75px] left-[75px] gap-[22px]">
+                            <h1 class="font-normal text-[48px] leading-[58px] text-white">დიზაინი,
+                                <br>რომელიც მეტყველებს.
+                            </h1>
+                            <h2 class="font-medium text-[36px] leading-[42px] text-white">კომპანიის შესახებ
+                            </h2>
+                            <div class="bg-white rounded-[50px] flex py-[18px] px-[33px] max-w-[244px] gap-6">
+                                <img src="../src/assets/nextstep.png" alt="">
+                                <h3 class="font-normal text-[24px] leading-[29px] text-[#FF6D00]">გაიგე მეტი</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="w-full flex justify-center mt-[47px]">
         <div class="flex flex-col gap-[34px]">
             <div class="flex flex-col gap-2">
                 <h2 class="font-normal text-[36px] leading-[44px] text-[#000000]">
@@ -58,9 +121,10 @@
             </div>
             <div class="flex gap-[24px]">
                 <div id="project"
-                    class="flex flex-col gap-[45px] w-[379px] bg-white border border-[#0000001a] px-[43px] py-[32px] rounded-[20px] cursor-pointer ">
+                    class="flex flex-col gap-[29px] w-[379px] bg-white border border-[#0000001a] px-[43px] py-[21px] rounded-[20px] cursor-pointer ">
                     <div class="flex justify-between items-center">
-                        <div class="w-[58px] h-[58px] border-[4px] border-[#ffffff33] rounded-[50%] flex justify-center items-center">
+                        <div
+                            class="w-[66px] h-[66px] border-[8px] border-[#ffffff33] rounded-[50%] flex justify-center items-center">
                             <img src="../src/assets/project-icon.png" class="w-[53px] h-[47px]" alt="" />
                             <img src="../src/assets/project-icon-white.png" class="w-[53px] h-[47px] hidden" alt="" />
                         </div>
@@ -75,15 +139,15 @@
                             <img src="../src/assets/nextstepWhite.png" alt="">
                         </div>
                     </div>
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center mt-1">
                         <p class="font-normal text-base leading-[19px] text-[#000000]">
                             ნამუშევრების პორთფოლიო
                         </p>
-                        <img src="../src/assets/nextstep.png" alt="">
+                        <img src="../src/assets/nextstep.png" class="h-[26px]" alt="">
                     </div>
                 </div>
                 <div
-                    class="flex flex-col gap-[37px] w-[379px] bg-white border border-[#0000001a] px-[43px] pb-[25px] pt-[22px] rounded-[20px] cursor-pointer trainings">
+                    class="flex flex-col w-[379px] bg-white border border-[#0000001a] px-[43px] pb-[25px] pt-[21px] rounded-[20px] cursor-pointer trainings">
                     <div class="flex justify-between items-center">
                         <div>
                             <img src="../src/assets/marketing1-logo.png" alt="" />
@@ -93,7 +157,29 @@
                             მარკეტინგი
                         </h3>
                     </div>
-                    <div class="flex w-full justify-between items-center">
+                    <div class="flex w-full justify-between items-center mt-[27px]">
+                        <div class="w-[53px] h-[5px] bg-[#FF6D00] rounded-[5px]"></div>
+                        <div class="flex justify-center items-center">
+                            <div class="w-[53px] h-[5px] bg-white rounded-[5px] translate-x-2"></div>
+                            <img src="../src/assets/nextstepWhite.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center mt-[32px]">
+                        <h3 class="font-normal text-base leading-[19px] text-[#000000]">
+                            ბრენდინგი, პროდაქშენი
+                        </h3>
+                        <img src="../src/assets/nextstep.png" class="h-[26px]" alt="">
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-[31px] w-[379px] bg-white border border-[#0000001a] px-[43px] pt-[30px] pb-[25px] rounded-[20px] cursor-pointer trainings">
+                    <div class="flex justify-between items-center">
+                        <img src="../src/assets/trainings-logo.png" class="w-[53px] h-[47px]" alt="" />
+                        <h3 class="font-normal text-[32px] leading-[39px] text-[#000000]">
+                            ტრენინგები
+                        </h3>
+                    </div>
+                    <div class="flex w-full justify-between items-center ">
                         <div class="w-[53px] h-[5px] bg-[#FF6D00] rounded-[5px]"></div>
                         <div class="flex justify-center items-center">
                             <div class="w-[53px] h-[5px] bg-white rounded-[5px] translate-x-2"></div>
@@ -102,31 +188,9 @@
                     </div>
                     <div class="flex justify-between items-center mt-[5px]">
                         <p class="font-normal text-base leading-[19px] text-[#000000]">
-                            ბრენდინგი, პროდაქშენი
-                        </p>
-                        <img src="../src/assets/nextstep.png" alt="">
-                    </div>
-                </div>
-                <div
-                    class="flex flex-col gap-[39px] w-[379px] bg-white border border-[#0000001a] px-[43px] pt-[31px] pb-[25px] rounded-[20px] cursor-pointer trainings">
-                    <div class="flex justify-between items-center">
-                        <img src="../src/assets/trainings-logo.png" class="w-[53px] h-[47px]" alt="" />
-                        <h3 class="font-normal text-[32px] leading-[39px] text-[#000000]">
-                            ტრენინგები
-                        </h3>
-                    </div>
-                    <div class="flex w-full justify-between items-center mt-[9px]">
-                        <div class="w-[53px] h-[5px] bg-[#FF6D00] rounded-[5px]"></div>
-                        <div class="flex justify-center items-center">
-                            <div class="w-[53px] h-[5px] bg-white rounded-[5px] translate-x-2"></div>
-                            <img src="../src/assets/nextstepWhite.png" alt="">
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center mt-[3px]">
-                        <p class="font-normal text-base leading-[19px] text-[#000000]">
                             ტრენინგები,  workshop-ები
                         </p>
-                        <img src="../src/assets/nextstep.png" alt="">
+                        <img src="../src/assets/nextstep.png" class="h-[26px]" alt="">
                     </div>
                 </div>
             </div>
@@ -191,7 +255,8 @@
                 <h2 class="font-normal text-[36px] leading-[44px] text-white ">მზად ხართ, სასაუბროდ</h2>
                 <div class="w-[111px] h-[5px] bg-[#FF6D00] rounded-[5px] "></div>
             </div>
-            <div class="flex justify-center items-center bg-[#Ff6D00] rounded-[50px] px-6 py-[9px] mt-[40px]">
+            <div
+                class="flex justify-center items-center bg-[#Ff6D00] rounded-[50px] px-6 py-[9px] mt-[40px] cursor-pointer">
                 <p class="font-normal text-[32px] leading-[39px] text-white ">კონტაქტი</p>
                 <img src="../src/assets/nextstepWhite.png" class="ml-2" alt="">
             </div>
@@ -258,14 +323,27 @@
         <div class="flex gap-1.5 justify-center items-center">
             <p class="font-medium text-sm leading-4 text-[#000000] ">შემოგვიერთდით</p>
             <div class="flex gap-[27px]">
-                <img src="../src/assets/fb-icon.png" alt="">
-                <img src="../src/assets/Ig-icon.png" alt="">
-                <img src="../src/assets/whatsapp-icon.png" alt="">
+                <a href=""><img src="../src/assets/fb-icon.png" alt=""></a>
+                <a href=""><img src="../src/assets/Ig-icon.png" alt=""></a>
+                <a href=""><img src="../src/assets/whatsapp-icon.png" alt=""></a>
 
             </div>
         </div>
     </footer>
     <script src="../js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
